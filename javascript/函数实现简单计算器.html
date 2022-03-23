@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var xuan = prompt('欢迎使用简易计算器'+'\n'+'1.加法运算'+'\n'+'2.减法运算'+'\n'+'3.乘法运算'+'\n'+'4.除法运算'+'\n'+'5.退出'+'\n'+'请输入您的选项：');
+
+        function jia(arr){
+            var he=0;
+            for(var i = 0;i<arr.length;i++){
+                he+=arr[i];
+            }return he;
+        }
+        function jian(arr){
+            var cha=arr[0];
+            for(var i = 1;i<arr.length;i++){
+                cha-=arr[i];
+            }return cha;
+        }
+        function cheng(arr){
+            var ji=arr[0];
+            for(var i = 1;i<arr.length;i++){
+                ji*=arr[i];
+            }return ji;
+        }
+        function chu(arr){
+            var shang = arr[0];
+            for(var i = 1;i<arr.length;i++){
+                parseFloat(shang/=arr[i]);
+            }
+                return shang;
+        }
+        while(xuan==1||xuan==2||xuan==3||xuan==4||xuan==5){
+        switch(Number(xuan)){
+            case 1:var re = jia([5,4,3,2,1]);
+            alert('您的结果是：'+re);
+            break;
+            case 2:var re = jian([5,4,3,2,1]);
+            alert('您的结果是：'+re);
+            break;
+            case 3:var re = cheng([5,4,3,2,1]);
+            alert('您的结果是：'+re);
+            break;
+            case 4:var re = chu([5,4,3,2,1]);
+            alert('您的结果是：'+re);
+            break;
+            case 5:alert('正在退出');
+        }var xuan = prompt('欢迎使用简易计算器'+'\n'+'1.加法运算'+'\n'+'2.减法运算'+'\n'+'3.乘法运算'+'\n'+'4.除法运算'+'\n'+'5.退出'+'\n'+'请输入您的选项：');
+    }alert('输入错误');
+        </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function couttime(time){
+            var nowTime = + new Date();
+            var putTime = + new Date(time);
+            var times = (putTime - nowTime)/1000;
+            var d = parseInt(times/60/60/24);
+            var h = parseInt(times/60/60%24);
+            var m = parseInt(times/60%60);
+            var s = parseInt(times%60);
+            return d + '天' + h + '小时' + m + '分钟' + s + '秒' ;
+        }
+        console.log('时间还剩'+couttime('2022-3-22 17:59:00'));
+        let date = new Date();
+        console.log(date);
+        alert(date);
+        </script>
+</head>
+<body>
+    
+</body>
+</html>

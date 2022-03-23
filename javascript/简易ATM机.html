@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var salary = 100;
+        var yuju = prompt('请输入您的操作：'+'\n'+'1.存钱'+'\n'+'2.取钱'+'\n'+'3.显示余额'+'\n'+'4.退出');
+        yuju=Number(yuju);
+        while(yuju==1||yuju==2||yuju==3||yuju==4){
+        switch(yuju){
+            case 1:var money=prompt('请输入你要存的数目');
+                salary-=(-money);
+                alert('你现在的钱是'+salary);
+                
+                break;
+                
+            case 2:
+                var dao=prompt('您要取出多少钱');
+                salary+=(-dao);
+                alert('你现在的钱是'+salary);
+                break;  
+            case 3:
+                alert('您的余额为'+salary);
+            break;
+           case 4:
+               alert('正在退出');
+            break;
+        }var yuju = prompt('请输入您的操作：'+'\n'+'1.存钱'+'\n'+'2.取钱'+'\n'+'3.显示余额'+'\n'+'4.退出');
+    }
+    alert('输入错误');
+    
+    
+        </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        console.log(Math.floor(1.1));//往下取
+        console.log(Math.ceil(1.9));//往上取
+        console.log(Math.round(1.1));
+        console.log(Math.round(1.5));
+        console.log(Math.round(-1.5));//.5往大了取
+        console.log(Math.random());//随机返回一个【0~1）之间的浮点数
+        function getRandomArbitrary(min, max) { //得到两个数之间的随机数
+        return Math.random() * (max - min) + min;
+        }
+        console.log(getRandomArbitrary(5,10));
+        function getRandomInt(min, max) {//得到两个数之间的随机整数
+        min = Math.ceil(min);
+        max = Math.floor(max);
+        return Math.floor(Math.random() * (max - min)) + min; //不含最大值，含最小值
+        }
+        console.log(getRandomInt(5,10));
+        var arr = ['王心','张三','李四','康'];
+        console.log(arr[getRandomInt(0,arr.length-1)]);//随机点名
+        </script>
+</head>
+<body>
+    
+</body>
+</html>

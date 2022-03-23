@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        
+        function getMax(arr){
+           
+           var max = arr[0];
+           for(var i=0;i<=arr.length;i++){
+              
+                if(arr[i]>max){
+                    max = arr[i];
+                }
+           } return max;
+        }
+        var re=getMax([1,50,60,98,78,100]);
+        console.log(re);
+        function getSum(num1,num2){
+            return [num1+num2,num1-num2,num1*num2,num1/num2];
+        }   console.log(getSum(100,50));
+        </script>
+</head>
+<body>
+    
+</body>
+</html>
